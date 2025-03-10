@@ -55,8 +55,8 @@ export function Featured() {
   const regularArticles = articles.filter(article => !article.isFeatured);
 
   return (
-    <div className="h-full">
-      <h2 className="section-title">Featured</h2>
+    <div className="h-full pt-6"> {/* Added pt-6 to move content down by 6px */}
+      <h2 className="section-title text-3xl">FEATURED</h2> {/* Changed from default size to text-3xl and uppercase */}
       {featuredArticle && (
         <div className="mb-8 group">
           <a href={featuredArticle.url} className="block">
