@@ -49,21 +49,21 @@ const Index = () => {
       {/* Main Content */}
       <main>
         {/* Three Column Layout with equal heading levels */}
-        <section className="py-12">
+        <section className="py-6">
           <Container>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
               {/* Breaking News Column (25%) */}
-              <div className="md:col-span-1 animate-on-scroll opacity-0">
+              <div className="md:col-span-1 animate-on-scroll opacity-0 h-full">
                 <BreakingNews />
               </div>
 
               {/* Featured Column (50%) */}
-              <div className="md:col-span-2 animate-on-scroll opacity-0">
+              <div className="md:col-span-2 animate-on-scroll opacity-0 flex flex-col h-full">
                 <Featured />
               </div>
 
               {/* Deep Analysis Column (25%) */}
-              <div className="md:col-span-1 animate-on-scroll opacity-0">
+              <div className="md:col-span-1 animate-on-scroll opacity-0 h-full">
                 <DeepAnalysis />
               </div>
             </div>
