@@ -27,6 +27,10 @@ export function Navigation() {
     {
       label: "News",
       href: "#",
+      children: [
+        { label: "Articles", href: "#" },
+        { label: "Forecast", href: "#" },
+      ],
     },
     {
       label: "Coins",
@@ -35,28 +39,19 @@ export function Navigation() {
         { label: "Stable Coins", href: "#" },
         { label: "Alt Coins", href: "#" },
         { label: "Meme Coins", href: "#" },
-        { label: "Blockchains", href: "#" },
       ],
     },
     {
-      label: "Bitcoin",
+      label: "Blockchains",
       href: "#",
-    },
-    {
-      label: "Ethereum",
-      href: "#",
-    },
-    {
-      label: "Solana",
-      href: "#",
-    },
-    {
-      label: "BSC/BNB",
-      href: "#",
-    },
-    {
-      label: "Ripple",
-      href: "#",
+      children: [
+        { label: "Bitcoin", href: "#" },
+        { label: "Ethereum", href: "#" },
+        { label: "Solana", href: "#" },
+        { label: "BSC/BNB", href: "#" },
+        { label: "Ripple/XRP", href: "#" },
+        { label: "SUI", href: "#" },
+      ],
     },
     {
       label: "Web3",
@@ -65,21 +60,24 @@ export function Navigation() {
         { label: "DeFi", href: "#" },
         { label: "DePIN", href: "#" },
         { label: "NFTs", href: "#" },
-        { label: "DAOs", href: "#" },
         { label: "Gaming", href: "#" },
+        { label: "Wallets", href: "#" },
       ],
     },
     {
       label: "Learn",
       href: "#",
       children: [
-        { label: "How-to's", href: "#" },
-        { label: "School", href: "#" },
-        { label: "Podcast", href: "#" },
+        { label: "How to Guides", href: "#" },
+        { label: "College", href: "#" },
       ],
     },
     {
-      label: "Launchpad",
+      label: "Podcasts",
+      href: "#",
+    },
+    {
+      label: "LaunchPad",
       href: "#",
     },
   ];

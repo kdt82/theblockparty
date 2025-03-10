@@ -48,7 +48,7 @@ const Index = () => {
 
       {/* Main Content */}
       <main>
-        {/* Three Column Layout */}
+        {/* Three Column Layout with equal heading levels */}
         <section className="py-12">
           <Container>
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
