@@ -21,10 +21,6 @@ export function Navigation() {
 
   const navItems: NavItem[] = [
     {
-      label: "All",
-      href: "#",
-    },
-    {
       label: "News",
       href: "#",
       children: [
@@ -102,6 +98,11 @@ export function Navigation() {
         <div className="flex items-center justify-between py-4">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
+              <img 
+                src="/lovable-uploads/208a168a-b626-42bc-866e-4466b723d567.png" 
+                alt="Logo" 
+                className="h-8 w-8 mr-2" 
+              />
               <div className="text-2xl font-display font-bold bg-gradient-to-r from-accent to-accent/70 bg-clip-text text-transparent">
                 The Block Party
               </div>
