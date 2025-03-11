@@ -1,0 +1,18 @@
+[build]
+  command = "npm run build"  # Adjust based on your framework
+  publish = "dist"  # Change to your build output folder (e.g., "build" for React)
+
+[dev]
+  framework = "auto"
+  targetPort = 3000  # If using a dev server
+
+[[redirects]]
+  from = "http://lovable.dev/*"
+  to = "https://lovable.dev/:splat"
+  status = 301
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
