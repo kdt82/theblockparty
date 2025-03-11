@@ -1,18 +1,21 @@
-[build]
-  command = "npm run build"  # Adjust based on your framework
-  publish = "dist"  # Change to your build output folder (e.g., "build" for React)
 
-[dev]
-  framework = "auto"
-  targetPort = 3000  # If using a dev server
+[build]
+  command = "npm run build"
+  publish = "dist"
 
 [[redirects]]
-  from = "http://lovable.dev/*"
-  to = "https://lovable.dev/:splat"
-  status = 301
-  force = true
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[dev]
+  framework = "vite"
+  targetPort = 8080
 
 [[headers]]
   for = "/*"
   [headers.values]
-    Access-Control-Allow-Origin = "*"
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"

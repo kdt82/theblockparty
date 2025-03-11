@@ -1,5 +1,2 @@
-# Redirect all HTTP to HTTPS
-http://lovable.dev/* https://lovable.dev/:splat 301!
 
-# Catch-all redirect to index.html (for SPAs)
 /* /index.html 200
